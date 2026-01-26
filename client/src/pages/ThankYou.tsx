@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { ArrowLeft, Calendar, CheckCircle } from "lucide-react";
 import { Link } from "wouter";
 import { useEffect } from "react";
+import { AnnouncementBar } from "@/components/AnnouncementBar";
 
 export default function ThankYou() {
   // Tracking Pixel Implementation
@@ -28,6 +29,7 @@ export default function ThankYou() {
 
   return (
     <div className="min-h-screen flex flex-col bg-background text-foreground selection:bg-primary selection:text-primary-foreground">
+      <AnnouncementBar />
       {/* Navigation */}
       <header className="border-b-2 border-border sticky top-0 z-50 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
         <div className="container flex h-20 items-center justify-between">
