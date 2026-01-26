@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Check, Shield, Scale, Database, Users, BarChart3, Lock, Zap } from "lucide-react";
+import { ImpactCalculator } from "@/components/ImpactCalculator";
 
 export default function Home() {
   return (
@@ -256,6 +257,10 @@ export default function Home() {
                   />
                 </div>
               </div>
+            </div>
+            
+            <div className="mt-16">
+              <ImpactCalculator />
             </div>
           </div>
         </section>
