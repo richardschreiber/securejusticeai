@@ -11,9 +11,11 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Download, Loader2 } from "lucide-react";
 import { useState } from "react";
+import { useLocation } from "wouter";
 import { toast } from "sonner";
 
 export function DownloadForm() {
+  const [, setLocation] = useLocation();
   const [open, setOpen] = useState(false);
   const [loading, setLoading] = useState(false);
   const [formData, setFormData] = useState({
@@ -52,6 +54,9 @@ export function DownloadForm() {
       email: "",
       cellPhone: "",
     });
+
+    // Redirect to Thank You page
+    setLocation("/thank-you");
   };
 
   return (
