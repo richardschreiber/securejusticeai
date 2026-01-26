@@ -1,6 +1,7 @@
 import { DownloadForm } from "@/components/DownloadForm";
 import { ImpactCalculator } from "@/components/ImpactCalculator";
 import { AnnouncementBar } from "@/components/AnnouncementBar";
+import { ContactForm } from "@/components/ContactForm";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Check, Shield, Scale, Database, Users, BarChart3, Lock, Zap } from "lucide-react";
 
@@ -395,9 +396,7 @@ export default function Home() {
               Join the pilot program. Secure funding. Scale your impact.
             </p>
             <div className="flex flex-col sm:flex-row justify-center gap-6 items-center">
-              <button className="btn-brutal-outline bg-white text-primary border-white hover:bg-white/90 hover:text-primary hover:border-white shadow-[4px_4px_0px_0px_rgba(0,0,0,0.2)] h-14 px-8">
-                CONTACT THE CONSORTIUM
-              </button>
+              <ContactForm />
               <DownloadForm />
             </div>
           </div>
