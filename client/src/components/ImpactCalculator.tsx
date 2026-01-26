@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Slider } from "@/components/ui/slider";
-import { Users, Clock, TrendingUp } from "lucide-react";
+import { Users, Clock, TrendingUp, Calendar } from "lucide-react";
 
 export function ImpactCalculator() {
   const [attorneys, setAttorneys] = useState([10]);
@@ -107,6 +107,11 @@ export function ImpactCalculator() {
               </div>
             </div>
           </div>
+
+          <a href="#contact" className="btn-brutal w-full text-lg group">
+            <Calendar className="mr-2 h-5 w-5 group-hover:scale-110 transition-transform" />
+            SCHEDULE A DEMO
+          </a>
         </div>
       </div>
     </div>
