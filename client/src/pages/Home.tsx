@@ -324,11 +324,11 @@ export default function Home() {
                 rel="noopener noreferrer"
                 className="p-6 border-2 border-border bg-secondary hover:bg-accent hover:text-accent-foreground transition-colors group flex flex-col items-center"
               >
-                <div className="h-24 w-24 mb-4 flex items-center justify-center">
+                <div className="h-24 w-full mb-4 flex items-center justify-center px-4">
                   <img 
-                    src="/images/logo-prevent-ransomware.png" 
+                    src="/images/logo-prevent-ransomware-official.png" 
                     alt="Prevent Ransomware Logo" 
-                    className="max-h-full max-w-full object-contain grayscale group-hover:grayscale-0 transition-all"
+                    className="max-h-full max-w-full object-contain"
                   />
                 </div>
                 <h4 className="font-bold text-lg mb-2 group-hover:underline decoration-2 underline-offset-4">prevent-ransomware.com</h4>
