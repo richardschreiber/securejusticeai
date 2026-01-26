@@ -1,8 +1,31 @@
 import { Button } from "@/components/ui/button";
 import { ArrowLeft, Calendar, CheckCircle } from "lucide-react";
 import { Link } from "wouter";
+import { useEffect } from "react";
 
 export default function ThankYou() {
+  // Tracking Pixel Implementation
+  useEffect(() => {
+    // 1. Console Log for Verification
+    console.log("Conversion Event: Report Downloaded - Thank You Page Loaded");
+
+    // 2. Placeholder for Real Pixel (e.g., LinkedIn, Meta, Google)
+    // To use: Uncomment and replace 'YOUR_PIXEL_ID' with your actual ID
+    /*
+    const pixelId = "YOUR_PIXEL_ID";
+    const img = document.createElement("img");
+    img.src = `https://example.com/tr?id=${pixelId}&ev=PageView&noscript=1`;
+    img.height = 1;
+    img.width = 1;
+    img.style.display = "none";
+    document.body.appendChild(img);
+    
+    return () => {
+      document.body.removeChild(img);
+    };
+    */
+  }, []);
+
   return (
     <div className="min-h-screen flex flex-col bg-background text-foreground selection:bg-primary selection:text-primary-foreground">
       {/* Navigation */}
