@@ -286,18 +286,33 @@ export default function Home() {
             </div>
 
             <div className="grid md:grid-cols-3 gap-8 text-center">
-              <div className="p-6 border-2 border-border bg-secondary">
-                <h4 className="font-bold text-lg mb-2">lawfirmaiexpert.com</h4>
-                <p className="text-sm text-muted-foreground">AI Research & Validation</p>
-              </div>
-              <div className="p-6 border-2 border-border bg-secondary">
-                <h4 className="font-bold text-lg mb-2">cognifysolutions.ai</h4>
-                <p className="text-sm text-muted-foreground">Governance & Strategy</p>
-              </div>
-              <div className="p-6 border-2 border-border bg-secondary">
-                <h4 className="font-bold text-lg mb-2">prevent-ransomware.com</h4>
-                <p className="text-sm text-muted-foreground">Cybersecurity & IT</p>
-              </div>
+              <a 
+                href="https://lawfirmaiexpert.com" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="p-6 border-2 border-border bg-secondary hover:bg-accent hover:text-accent-foreground transition-colors group"
+              >
+                <h4 className="font-bold text-lg mb-2 group-hover:underline decoration-2 underline-offset-4">lawfirmaiexpert.com</h4>
+                <p className="text-sm text-muted-foreground group-hover:text-accent-foreground/80">AI Research & Validation</p>
+              </a>
+              <a 
+                href="https://cognifysolutions.ai" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="p-6 border-2 border-border bg-secondary hover:bg-accent hover:text-accent-foreground transition-colors group"
+              >
+                <h4 className="font-bold text-lg mb-2 group-hover:underline decoration-2 underline-offset-4">cognifysolutions.ai</h4>
+                <p className="text-sm text-muted-foreground group-hover:text-accent-foreground/80">Governance & Strategy</p>
+              </a>
+              <a 
+                href="https://prevent-ransomware.com" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="p-6 border-2 border-border bg-secondary hover:bg-accent hover:text-accent-foreground transition-colors group"
+              >
+                <h4 className="font-bold text-lg mb-2 group-hover:underline decoration-2 underline-offset-4">prevent-ransomware.com</h4>
+                <p className="text-sm text-muted-foreground group-hover:text-accent-foreground/80">Cybersecurity & IT</p>
+              </a>
             </div>
           </div>
         </section>
