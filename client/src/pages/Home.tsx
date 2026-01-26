@@ -285,6 +285,50 @@ export default function Home() {
               </div>
             </div>
 
+            {/* Joint Mission Statement */}
+            <div className="mb-20 grid md:grid-cols-2 gap-12 items-center max-w-5xl mx-auto">
+              <div className="border-l-4 border-primary pl-8 py-2">
+                <h3 className="text-3xl font-bold font-display mb-4 uppercase">The Triad of Trust</h3>
+                <p className="text-lg text-muted-foreground leading-relaxed mb-6">
+                  Solving the justice gap requires more than just software. It demands a holistic ecosystem where <strong>innovation</strong> meets <strong>security</strong> and <strong>strategy</strong>.
+                </p>
+                <p className="text-lg text-muted-foreground leading-relaxed">
+                  We joined forces because no single entity can solve this crisis alone. By unifying our specialized capabilities, we deliver the first solution that is powerful enough to scale, yet secure enough to trust.
+                </p>
+              </div>
+              <div className="bg-secondary p-8 border-2 border-border shadow-[8px_8px_0px_0px_var(--color-border)]">
+                <ul className="space-y-6">
+                  <li className="flex items-start gap-4">
+                    <div className="bg-primary text-primary-foreground p-1 mt-1">
+                      <Check className="h-4 w-4" />
+                    </div>
+                    <div>
+                      <strong className="block text-lg font-bold uppercase">Validated Intelligence</strong>
+                      <span className="text-muted-foreground">AI models trained on verified legal data, not generic internet scrapes.</span>
+                    </div>
+                  </li>
+                  <li className="flex items-start gap-4">
+                    <div className="bg-primary text-primary-foreground p-1 mt-1">
+                      <Check className="h-4 w-4" />
+                    </div>
+                    <div>
+                      <strong className="block text-lg font-bold uppercase">Strategic Governance</strong>
+                      <span className="text-muted-foreground">Frameworks that ensure ethical use, compliance, and long-term sustainability.</span>
+                    </div>
+                  </li>
+                  <li className="flex items-start gap-4">
+                    <div className="bg-primary text-primary-foreground p-1 mt-1">
+                      <Check className="h-4 w-4" />
+                    </div>
+                    <div>
+                      <strong className="block text-lg font-bold uppercase">Fortified Defense</strong>
+                      <span className="text-muted-foreground">Enterprise-grade cybersecurity protecting sensitive client data from day one.</span>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
             <div className="grid md:grid-cols-3 gap-8 text-center">
               <a 
                 href="https://lawfirmaiexpert.com" 
