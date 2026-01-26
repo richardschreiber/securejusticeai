@@ -290,8 +290,15 @@ export default function Home() {
                 href="https://lawfirmaiexpert.com" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="p-6 border-2 border-border bg-secondary hover:bg-accent hover:text-accent-foreground transition-colors group"
+                className="p-6 border-2 border-border bg-secondary hover:bg-accent hover:text-accent-foreground transition-colors group flex flex-col items-center"
               >
+                <div className="h-24 w-24 mb-4 flex items-center justify-center">
+                  <img 
+                    src="/images/logo-lawfirmaiexpert.png" 
+                    alt="LawFirmAIExpert Logo" 
+                    className="max-h-full max-w-full object-contain grayscale group-hover:grayscale-0 transition-all"
+                  />
+                </div>
                 <h4 className="font-bold text-lg mb-2 group-hover:underline decoration-2 underline-offset-4">lawfirmaiexpert.com</h4>
                 <p className="text-sm text-muted-foreground group-hover:text-accent-foreground/80">AI Research & Validation</p>
               </a>
@@ -299,8 +306,15 @@ export default function Home() {
                 href="https://cognifysolutions.ai" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="p-6 border-2 border-border bg-secondary hover:bg-accent hover:text-accent-foreground transition-colors group"
+                className="p-6 border-2 border-border bg-secondary hover:bg-accent hover:text-accent-foreground transition-colors group flex flex-col items-center"
               >
+                <div className="h-24 w-24 mb-4 flex items-center justify-center">
+                  <img 
+                    src="/images/logo-cognifysolutions.png" 
+                    alt="Cognify Solutions Logo" 
+                    className="max-h-full max-w-full object-contain grayscale group-hover:grayscale-0 transition-all"
+                  />
+                </div>
                 <h4 className="font-bold text-lg mb-2 group-hover:underline decoration-2 underline-offset-4">cognifysolutions.ai</h4>
                 <p className="text-sm text-muted-foreground group-hover:text-accent-foreground/80">Governance & Strategy</p>
               </a>
@@ -308,8 +322,15 @@ export default function Home() {
                 href="https://prevent-ransomware.com" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="p-6 border-2 border-border bg-secondary hover:bg-accent hover:text-accent-foreground transition-colors group"
+                className="p-6 border-2 border-border bg-secondary hover:bg-accent hover:text-accent-foreground transition-colors group flex flex-col items-center"
               >
+                <div className="h-24 w-24 mb-4 flex items-center justify-center">
+                  <img 
+                    src="/images/logo-prevent-ransomware.png" 
+                    alt="Prevent Ransomware Logo" 
+                    className="max-h-full max-w-full object-contain grayscale group-hover:grayscale-0 transition-all"
+                  />
+                </div>
                 <h4 className="font-bold text-lg mb-2 group-hover:underline decoration-2 underline-offset-4">prevent-ransomware.com</h4>
                 <p className="text-sm text-muted-foreground group-hover:text-accent-foreground/80">Cybersecurity & IT</p>
               </a>
