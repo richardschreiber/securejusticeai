@@ -1,5 +1,9 @@
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import { MapView } from "./Map";
+import { Input } from "@/components/ui/input";
+import { Button } from "@/components/ui/button";
+import { Search, MapPin } from "lucide-react";
+import { toast } from "sonner";
 
 const PILOT_LOCATIONS = [
   { lat: 40.7128, lng: -74.0060, title: "New York, NY - Legal Aid Society" },
@@ -16,6 +20,8 @@ const PILOT_LOCATIONS = [
 
 export function ImpactMap() {
   const mapRef = useRef<google.maps.Map | null>(null);
+  const [searchQuery, setSearchQuery] = useState("");
+  const [isSearching, setIsSearching] = useState(false);
 
   const handleMapReady = (map: google.maps.Map) => {
     mapRef.current = map;
@@ -30,20 +36,88 @@ export function ImpactMap() {
     });
   };
 
+  const handleSearch = async (e: React.FormEvent) => {
+    e.preventDefault();
+    if (!searchQuery.trim() || !mapRef.current) return;
+
+    setIsSearching(true);
+    const geocoder = new google.maps.Geocoder();
+
+    try {
+      const { results } = await geocoder.geocode({ address: searchQuery });
+      
+      if (results && results[0]) {
+        const userLocation = results[0].geometry.location;
+        
+        // Find nearest pilot location
+        let nearest = PILOT_LOCATIONS[0];
+        let minDistance = Number.MAX_VALUE;
+
+        PILOT_LOCATIONS.forEach(pilot => {
+          const pilotLoc = new google.maps.LatLng(pilot.lat, pilot.lng);
+          const distance = google.maps.geometry.spherical.computeDistanceBetween(userLocation, pilotLoc);
+          
+          if (distance < minDistance) {
+            minDistance = distance;
+            nearest = pilot;
+          }
+        });
+
+        // Update map view
+        mapRef.current.setCenter(nearest);
+        mapRef.current.setZoom(10);
+        
+        toast.success(`Nearest partner found: ${nearest.title}`);
+      } else {
+        toast.error("Location not found. Please try again.");
+      }
+    } catch (error) {
+      console.error("Geocoding error:", error);
+      toast.error("Error finding location. Please try again.");
+    } finally {
+      setIsSearching(false);
+    }
+  };
+
   return (
-    <div className="w-full h-[400px] rounded-lg overflow-hidden border border-border shadow-lg relative">
-      <div className="absolute top-4 left-4 z-10 bg-card/90 backdrop-blur p-3 rounded-md border border-border shadow-sm max-w-xs">
-        <h4 className="font-bold text-sm mb-1">NATIONWIDE PILOT NETWORK</h4>
-        <p className="text-xs text-muted-foreground">
-          Partnering with leading LSOs across 10 major metropolitan areas to validate impact at scale.
-        </p>
+    <div className="w-full flex flex-col gap-4">
+      <div className="bg-card border border-border p-4 rounded-lg shadow-sm">
+        <h3 className="font-bold text-lg mb-4 flex items-center gap-2">
+          <MapPin className="h-5 w-5 text-primary" />
+          Find a Partner Near You
+        </h3>
+        <form onSubmit={handleSearch} className="flex gap-2">
+          <Input 
+            placeholder="Enter city, state, or zip code..." 
+            value={searchQuery}
+            onChange={(e) => setSearchQuery(e.target.value)}
+            className="flex-1"
+          />
+          <Button type="submit" disabled={isSearching}>
+            {isSearching ? (
+              <span className="animate-spin mr-2">⏳</span>
+            ) : (
+              <Search className="h-4 w-4 mr-2" />
+            )}
+            Search
+          </Button>
+        </form>
       </div>
-      <MapView
-        initialCenter={{ lat: 39.8283, lng: -98.5795 }} // Center of USA
-        initialZoom={4}
-        onMapReady={handleMapReady}
-        className="w-full h-full"
-      />
+
+      <div className="w-full h-[400px] rounded-lg overflow-hidden border border-border shadow-lg relative">
+        <div className="absolute top-4 left-4 z-10 bg-card/90 backdrop-blur p-3 rounded-md border border-border shadow-sm max-w-xs">
+          <h4 className="font-bold text-sm mb-1">NATIONWIDE PILOT NETWORK</h4>
+          <p className="text-xs text-muted-foreground">
+            Partnering with leading LSOs across 10 major metropolitan areas to validate impact at scale.
+          </p>
+        </div>
+        <MapView
+          initialCenter={{ lat: 39.8283, lng: -98.5795 }} // Center of USA
+          initialZoom={4}
+          onMapReady={handleMapReady}
+          className="w-full h-full"
+        />
+      </div>
     </div>
   );
 }
