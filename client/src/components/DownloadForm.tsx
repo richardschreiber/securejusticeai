@@ -71,7 +71,7 @@ export function DownloadForm() {
         <DialogHeader>
           <DialogTitle className="text-2xl font-bold font-display uppercase">Get the Full Report</DialogTitle>
           <DialogDescription className="text-base text-muted-foreground">
-            Please complete the form below to download the comprehensive IT/AI in a Box viability analysis.
+            Please complete the form below to download the comprehensive AI viability analysis.
           </DialogDescription>
         </DialogHeader>
         <form onSubmit={handleSubmit} className="grid gap-6 py-4">
