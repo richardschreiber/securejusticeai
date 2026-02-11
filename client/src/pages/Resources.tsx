@@ -1,10 +1,13 @@
-import { FileText, Download, ArrowRight, BookOpen, Shield, Users, Scale, Search } from "lucide-react";
+import { FileText, Download, ArrowRight, BookOpen, Shield, Users, Scale, Search, Eye, X } from "lucide-react";
 import { AnnouncementBar } from "@/components/AnnouncementBar";
 import { useState } from "react";
 import { Input } from "@/components/ui/input";
+import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog";
+import { Button } from "@/components/ui/button";
 
 export default function Resources() {
   const [searchQuery, setSearchQuery] = useState("");
+  const [selectedResource, setSelectedResource] = useState<typeof resources[0] | null>(null);
 
   const resources = [
     {
@@ -157,7 +160,7 @@ export default function Resources() {
                       </div>
                       <h2 className="text-3xl font-bold group-hover:text-primary transition-colors">{resource.title}</h2>
                       <p className="text-lg text-muted-foreground">{resource.description}</p>
-                      <div className="pt-4">
+                      <div className="pt-4 flex gap-4">
                         <a 
                           href={resource.url} 
                           target="_blank"
@@ -167,6 +170,14 @@ export default function Resources() {
                           <Download className="h-4 w-4" />
                           Download Report
                         </a>
+                        <Button 
+                          variant="outline" 
+                          className="gap-2 h-auto py-3"
+                          onClick={() => setSelectedResource(resource)}
+                        >
+                          <Eye className="h-4 w-4" />
+                          Quick View
+                        </Button>
                       </div>
                     </div>
                   </div>
@@ -187,14 +198,23 @@ export default function Resources() {
                     <p className="text-sm text-muted-foreground mb-6 flex-grow">{resource.description}</p>
                     <div className="pt-4 border-t border-border/50 flex items-center justify-between">
                       <span className="text-xs text-muted-foreground font-mono">{resource.size}</span>
-                      <a 
-                        href={resource.url} 
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-primary font-bold text-sm flex items-center gap-1 hover:underline"
-                      >
-                        Download <ArrowRight className="h-3 w-3" />
-                      </a>
+                      <div className="flex gap-3">
+                        <button 
+                          onClick={() => setSelectedResource(resource)}
+                          className="text-muted-foreground hover:text-primary transition-colors"
+                          title="Quick View"
+                        >
+                          <Eye className="h-4 w-4" />
+                        </button>
+                        <a 
+                          href={resource.url} 
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-primary font-bold text-sm flex items-center gap-1 hover:underline"
+                        >
+                          Download <ArrowRight className="h-3 w-3" />
+                        </a>
+                      </div>
                     </div>
                   </div>
                 ))}
@@ -228,6 +248,42 @@ export default function Resources() {
           </div>
         </div>
       </footer>
+
+      {/* Quick View Modal */}
+      <Dialog open={!!selectedResource} onOpenChange={(open) => !open && setSelectedResource(null)}>
+        <DialogContent className="max-w-4xl h-[80vh] flex flex-col p-0 gap-0">
+          <div className="p-4 border-b border-border flex items-center justify-between bg-background rounded-t-lg">
+            <div className="flex items-center gap-3">
+              <div className="h-8 w-8 bg-primary/10 rounded flex items-center justify-center">
+                {selectedResource?.icon}
+              </div>
+              <div>
+                <h3 className="font-bold text-sm line-clamp-1">{selectedResource?.title}</h3>
+                <p className="text-xs text-muted-foreground">{selectedResource?.type}</p>
+              </div>
+            </div>
+            <div className="flex items-center gap-2">
+              <a 
+                href={selectedResource?.url} 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="btn-brutal text-xs px-3 py-1.5 h-auto flex items-center gap-1"
+              >
+                <Download className="h-3 w-3" /> Download
+              </a>
+            </div>
+          </div>
+          <div className="flex-1 bg-muted/20 overflow-hidden relative">
+            {selectedResource && (
+              <iframe 
+                src={`https://docs.google.com/gview?url=${encodeURIComponent(selectedResource.url)}&embedded=true`}
+                className="w-full h-full border-0"
+                title={selectedResource.title}
+              />
+            )}
+          </div>
+        </DialogContent>
+      </Dialog>
     </div>
   );
 }
