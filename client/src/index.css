@@ -8,10 +8,10 @@
   --font-display: "Space Grotesk", sans-serif;
   --font-mono: "JetBrains Mono", monospace;
 
-  --radius-sm: 0px;
-  --radius-md: 0px;
-  --radius-lg: 0px;
-  --radius-xl: 0px;
+  --radius-sm: 0.25rem;
+  --radius-md: 0.375rem;
+  --radius-lg: 0.5rem;
+  --radius-xl: 0.75rem;
 
   --color-background: var(--background);
   --color-foreground: var(--foreground);
@@ -48,97 +48,100 @@
 }
 
 :root {
-  /* Neo-Brutalist Palette */
-  --primary: #0047AB; /* Legal Aid Blue */
+  /* Secure Justice AI Palette - Tech & Trust */
+  /* Primary: Deep Blue Shield (#003366) */
+  /* Accent: Cyan Circuitry (#00C2CB) */
+  
+  --primary: #003366; 
   --primary-foreground: #FFFFFF;
   
-  --background: #FFFFFF;
-  --foreground: #1A1A1A;
+  --background: #F8FAFC; /* Slight cool gray tint */
+  --foreground: #0F172A; /* Slate 900 */
   
   --card: #FFFFFF;
-  --card-foreground: #1A1A1A;
+  --card-foreground: #0F172A;
   
   --popover: #FFFFFF;
-  --popover-foreground: #1A1A1A;
+  --popover-foreground: #0F172A;
   
-  --secondary: #F2F2F2;
-  --secondary-foreground: #1A1A1A;
+  --secondary: #E0F7FA; /* Light Cyan tint */
+  --secondary-foreground: #006064; /* Dark Cyan */
   
-  --muted: #F2F2F2;
-  --muted-foreground: #666666;
+  --muted: #F1F5F9; /* Slate 100 */
+  --muted-foreground: #64748B; /* Slate 500 */
   
-  --accent: #E6F0FF;
-  --accent-foreground: #0047AB;
-  
-  --destructive: #D32F2F;
-  --destructive-foreground: #FFFFFF;
-  
-  --border: #1A1A1A; /* Heavy borders */
-  --input: #1A1A1A;
-  --ring: #0047AB;
-  
-  --radius: 0px; /* Sharp edges */
-
-  --chart-1: #0047AB;
-  --chart-2: #1A1A1A;
-  --chart-3: #666666;
-  --chart-4: #CCCCCC;
-  --chart-5: #E6F0FF;
-
-  --sidebar: #F2F2F2;
-  --sidebar-foreground: #1A1A1A;
-  --sidebar-primary: #0047AB;
-  --sidebar-primary-foreground: #FFFFFF;
-  --sidebar-accent: #E6F0FF;
-  --sidebar-accent-foreground: #0047AB;
-  --sidebar-border: #1A1A1A;
-  --sidebar-ring: #0047AB;
-}
-
-.dark {
-  /* Dark Mode Palette - High Contrast */
-  --primary: #4D94FF;
-  --primary-foreground: #000000;
-  
-  --background: #0A0A0A;
-  --foreground: #FFFFFF;
-  
-  --card: #1A1A1A;
-  --card-foreground: #FFFFFF;
-  
-  --popover: #1A1A1A;
-  --popover-foreground: #FFFFFF;
-  
-  --secondary: #2A2A2A;
-  --secondary-foreground: #FFFFFF;
-  
-  --muted: #2A2A2A;
-  --muted-foreground: #A1A1AA;
-  
-  --accent: #1E3A8A;
+  --accent: #00C2CB; /* Cyan from logo */
   --accent-foreground: #FFFFFF;
   
   --destructive: #EF4444;
   --destructive-foreground: #FFFFFF;
   
-  --border: #FFFFFF;
-  --input: #FFFFFF;
-  --ring: #4D94FF;
+  --border: #E2E8F0; /* Slate 200 - softer borders */
+  --input: #E2E8F0;
+  --ring: #00C2CB;
   
-  --chart-1: #4D94FF;
-  --chart-2: #FFFFFF;
-  --chart-3: #A1A1AA;
-  --chart-4: #52525B;
-  --chart-5: #1E3A8A;
+  --radius: 0.5rem; /* Rounded corners for modern look */
 
-  --sidebar: #1A1A1A;
-  --sidebar-foreground: #FFFFFF;
-  --sidebar-primary: #4D94FF;
-  --sidebar-primary-foreground: #000000;
-  --sidebar-accent: #1E3A8A;
-  --sidebar-accent-foreground: #FFFFFF;
-  --sidebar-border: #FFFFFF;
-  --sidebar-ring: #4D94FF;
+  --chart-1: #003366;
+  --chart-2: #00C2CB;
+  --chart-3: #64748B;
+  --chart-4: #94A3B8;
+  --chart-5: #E0F7FA;
+
+  --sidebar: #FFFFFF;
+  --sidebar-foreground: #0F172A;
+  --sidebar-primary: #003366;
+  --sidebar-primary-foreground: #FFFFFF;
+  --sidebar-accent: #E0F7FA;
+  --sidebar-accent-foreground: #003366;
+  --sidebar-border: #E2E8F0;
+  --sidebar-ring: #00C2CB;
+}
+
+.dark {
+  /* Dark Mode Palette */
+  --primary: #00C2CB; /* Cyan pops in dark mode */
+  --primary-foreground: #003366;
+  
+  --background: #020617; /* Slate 950 */
+  --foreground: #F8FAFC;
+  
+  --card: #0F172A; /* Slate 900 */
+  --card-foreground: #F8FAFC;
+  
+  --popover: #0F172A;
+  --popover-foreground: #F8FAFC;
+  
+  --secondary: #1E293B; /* Slate 800 */
+  --secondary-foreground: #F8FAFC;
+  
+  --muted: #1E293B;
+  --muted-foreground: #94A3B8;
+  
+  --accent: #003366;
+  --accent-foreground: #FFFFFF;
+  
+  --destructive: #EF4444;
+  --destructive-foreground: #FFFFFF;
+  
+  --border: #1E293B;
+  --input: #1E293B;
+  --ring: #00C2CB;
+  
+  --chart-1: #00C2CB;
+  --chart-2: #003366;
+  --chart-3: #94A3B8;
+  --chart-4: #64748B;
+  --chart-5: #1E293B;
+
+  --sidebar: #0F172A;
+  --sidebar-foreground: #F8FAFC;
+  --sidebar-primary: #00C2CB;
+  --sidebar-primary-foreground: #003366;
+  --sidebar-accent: #1E293B;
+  --sidebar-accent-foreground: #F8FAFC;
+  --sidebar-border: #1E293B;
+  --sidebar-ring: #00C2CB;
 }
 
 @layer base {
@@ -173,16 +176,16 @@
     }
   }
 
-  /* Neo-Brutalist Components */
+  /* Modern Tech Components - Replacing Neo-Brutalist */
   .box-card {
-    @apply border-2 border-border bg-card p-6 shadow-[4px_4px_0px_0px_var(--color-border)] transition-all hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-[2px_2px_0px_0px_var(--color-border)];
+    @apply border border-border bg-card p-6 rounded-lg shadow-sm hover:shadow-md transition-all hover:-translate-y-1;
   }
   
   .btn-brutal {
-    @apply inline-flex items-center justify-center border-2 border-border bg-primary px-6 py-3 font-display font-bold text-primary-foreground shadow-[4px_4px_0px_0px_var(--color-border)] transition-all hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-[2px_2px_0px_0px_var(--color-border)] active:translate-x-[4px] active:translate-y-[4px] active:shadow-none;
+    @apply inline-flex items-center justify-center rounded-md bg-primary px-6 py-3 font-display font-bold text-primary-foreground shadow-lg shadow-primary/20 transition-all hover:bg-primary/90 hover:shadow-primary/30 active:scale-95;
   }
 
   .btn-brutal-outline {
-    @apply inline-flex items-center justify-center border-2 border-border bg-background px-6 py-3 font-display font-bold text-foreground shadow-[4px_4px_0px_0px_var(--color-border)] transition-all hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-[2px_2px_0px_0px_var(--color-border)] active:translate-x-[4px] active:translate-y-[4px] active:shadow-none;
+    @apply inline-flex items-center justify-center rounded-md border-2 border-primary bg-transparent px-6 py-3 font-display font-bold text-primary shadow-sm transition-all hover:bg-primary/5 active:scale-95;
   }
 }

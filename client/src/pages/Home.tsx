@@ -13,8 +13,7 @@ export default function Home() {
       <header className="border-b-2 border-border sticky top-0 z-50 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
         <div className="container flex h-20 items-center justify-between">
           <div className="flex items-center gap-2">
-            <div className="h-8 w-8 bg-primary border-2 border-border"></div>
-            <span className="font-display text-xl font-bold tracking-tighter">IT/AI IN A BOX</span>
+            <img src="https://files.manuscdn.com/user_upload_by_module/session_file/310419663026744496/CaQwFveWPJStmzyy.png" alt="Secure Justice AI" className="h-12 w-auto" />
           </div>
           <nav className="hidden md:flex items-center gap-8 font-mono text-sm font-medium">
             <a href="#problem" className="hover:text-primary transition-colors">THE GAP</a>
@@ -33,7 +32,7 @@ export default function Home() {
         <section className="relative border-b-2 border-border overflow-hidden">
           <div className="container grid lg:grid-cols-2 gap-12 py-24 lg:py-32 items-center">
             <div className="space-y-8">
-              <div className="inline-block border-2 border-border bg-accent px-4 py-1 font-mono text-sm font-bold text-accent-foreground shadow-[4px_4px_0px_0px_var(--color-border)]">
+              <div className="inline-block border border-border bg-accent px-4 py-1 font-mono text-sm font-bold text-accent-foreground shadow-sm">
                 FOR NONPROFIT LEGAL SERVICES
               </div>
               <h1 className="font-display text-5xl lg:text-7xl font-bold leading-[0.9] tracking-tighter">
@@ -54,16 +53,16 @@ export default function Home() {
               </div>
             </div>
             <div className="relative">
-              <div className="border-2 border-border bg-card p-2 shadow-[8px_8px_0px_0px_var(--color-border)]">
+              <div className="border border-border bg-card p-2 shadow-md">
                 <img 
-                  src="/images/hero-justice-tech.png" 
+                  src="https://files.manuscdn.com/user_upload_by_module/session_file/310419663026744496/AzCGvfdlobYIdKGu.png" 
                   alt="Justice Technology Infrastructure" 
                   className="w-full h-auto border border-border grayscale hover:grayscale-0 transition-all duration-500"
                 />
               </div>
               {/* Decorative Elements */}
-              <div className="absolute -bottom-6 -right-6 w-24 h-24 bg-primary border-2 border-border shadow-[4px_4px_0px_0px_var(--color-border)] -z-10"></div>
-              <div className="absolute -top-6 -left-6 w-full h-full border-2 border-border border-dashed -z-20"></div>
+              <div className="absolute -bottom-6 -right-6 w-24 h-24 bg-primary border border-border shadow-sm -z-10"></div>
+              <div className="absolute -top-6 -left-6 w-full h-full border border-border border-dashed opacity-50 -z-20"></div>
             </div>
           </div>
         </section>
@@ -91,32 +90,32 @@ export default function Home() {
                 </div>
               </div>
               <div className="lg:col-span-7">
-                <div className="border-2 border-border bg-background p-8 shadow-[8px_8px_0px_0px_var(--color-border)] h-full flex flex-col justify-center">
+                <div className="border border-border bg-background p-8 shadow-md h-full flex flex-col justify-center">
                   <h3 className="text-2xl font-bold mb-6">THE FRAGMENTATION PROBLEM</h3>
                   <div className="grid sm:grid-cols-2 gap-6">
                     <div className="space-y-2">
-                      <div className="h-12 w-12 bg-muted border-2 border-border flex items-center justify-center mb-4">
+                      <div className="h-12 w-12 bg-muted border border-border flex items-center justify-center mb-4">
                         <Zap className="h-6 w-6" />
                       </div>
                       <h4 className="font-bold">Disconnected Tools</h4>
                       <p className="text-sm text-muted-foreground">LSOs are forced to cobble together disparate point solutions for case management, research, and intake.</p>
                     </div>
                     <div className="space-y-2">
-                      <div className="h-12 w-12 bg-muted border-2 border-border flex items-center justify-center mb-4">
+                      <div className="h-12 w-12 bg-muted border border-border flex items-center justify-center mb-4">
                         <Lock className="h-6 w-6" />
                       </div>
                       <h4 className="font-bold">Security Risks</h4>
                       <p className="text-sm text-muted-foreground">Patchwork infrastructure leaves sensitive client data vulnerable to ransomware and breaches.</p>
                     </div>
                     <div className="space-y-2">
-                      <div className="h-12 w-12 bg-muted border-2 border-border flex items-center justify-center mb-4">
+                      <div className="h-12 w-12 bg-muted border border-border flex items-center justify-center mb-4">
                         <Scale className="h-6 w-6" />
                       </div>
                       <h4 className="font-bold">Governance Gaps</h4>
                       <p className="text-sm text-muted-foreground">Rapid AI adoption without proper frameworks creates ethical and liability risks.</p>
                     </div>
                     <div className="space-y-2">
-                      <div className="h-12 w-12 bg-muted border-2 border-border flex items-center justify-center mb-4">
+                      <div className="h-12 w-12 bg-muted border border-border flex items-center justify-center mb-4">
                         <Users className="h-6 w-6" />
                       </div>
                       <h4 className="font-bold">Resource Drain</h4>
@@ -134,7 +133,7 @@ export default function Home() {
           <div className="container">
             <div className="text-center max-w-3xl mx-auto mb-16 space-y-4">
               <div className="inline-block border border-border px-3 py-1 font-mono text-xs font-bold uppercase tracking-widest">The Solution</div>
-              <h2 className="text-4xl md:text-5xl font-bold">IT/AI IN A BOX</h2>
+              <h2 className="text-4xl md:text-5xl font-bold">SECURE JUSTICE AI</h2>
               <p className="text-xl text-muted-foreground">
                 A comprehensive, turnkey ecosystem designed specifically for the needs of legal aid organizations.
               </p>
@@ -218,7 +217,7 @@ export default function Home() {
                 <h2 className="text-4xl font-bold mb-8">MEASURABLE IMPACT.</h2>
                 <div className="space-y-6">
                   <div className="flex gap-6 items-start">
-                    <div className="h-16 w-16 bg-primary border-2 border-border flex items-center justify-center shrink-0 shadow-[4px_4px_0px_0px_var(--color-border)]">
+                    <div className="h-16 w-16 bg-primary border border-border flex items-center justify-center shrink-0 shadow-sm">
                       <BarChart3 className="h-8 w-8 text-primary-foreground" />
                     </div>
                     <div>
@@ -229,7 +228,7 @@ export default function Home() {
                     </div>
                   </div>
                   <div className="flex gap-6 items-start">
-                    <div className="h-16 w-16 bg-background border-2 border-border flex items-center justify-center shrink-0 shadow-[4px_4px_0px_0px_var(--color-border)]">
+                    <div className="h-16 w-16 bg-background border border-border flex items-center justify-center shrink-0 shadow-sm">
                       <Zap className="h-8 w-8 text-foreground" />
                     </div>
                     <div>
@@ -240,7 +239,7 @@ export default function Home() {
                     </div>
                   </div>
                   <div className="flex gap-6 items-start">
-                    <div className="h-16 w-16 bg-background border-2 border-border flex items-center justify-center shrink-0 shadow-[4px_4px_0px_0px_var(--color-border)]">
+                    <div className="h-16 w-16 bg-background border border-border flex items-center justify-center shrink-0 shadow-sm">
                       <Shield className="h-8 w-8 text-foreground" />
                     </div>
                     <div>
@@ -253,9 +252,9 @@ export default function Home() {
                 </div>
               </div>
               <div className="relative">
-                <div className="border-2 border-border bg-card p-2 shadow-[12px_12px_0px_0px_var(--color-border)]">
+                <div className="border border-border bg-card p-2 shadow-lg">
                   <img 
-                    src="/images/impact-growth.png" 
+                    src="https://files.manuscdn.com/user_upload_by_module/session_file/310419663026744496/KdRYHAxezQKmgFwa.png" 
                     alt="Impact Growth Chart" 
                     className="w-full h-auto border border-border"
                   />
@@ -280,9 +279,9 @@ export default function Home() {
             </div>
 
             <div className="relative mb-16">
-              <div className="border-2 border-border bg-card p-2 shadow-[8px_8px_0px_0px_var(--color-border)] max-w-4xl mx-auto">
+              <div className="border border-border bg-card p-2 shadow-md max-w-4xl mx-auto">
                 <img 
-                  src="/images/consortium-network.png" 
+                  src="https://files.manuscdn.com/user_upload_by_module/session_file/310419663026744496/vZFfMphirvxCaMqv.png" 
                   alt="Consortium Network Diagram" 
                   className="w-full h-auto border border-border"
                 />
@@ -300,7 +299,7 @@ export default function Home() {
                   We joined forces because no single entity can solve this crisis alone. By unifying our specialized capabilities, we deliver the first solution that is powerful enough to scale, yet secure enough to trust.
                 </p>
               </div>
-              <div className="bg-secondary p-8 border-2 border-border shadow-[8px_8px_0px_0px_var(--color-border)]">
+              <div className="bg-secondary p-8 border border-border shadow-md">
                 <ul className="space-y-6">
                   <li className="flex items-start gap-4">
                     <div className="bg-primary text-primary-foreground p-1 mt-1">
@@ -338,11 +337,11 @@ export default function Home() {
                 href="https://lawfirmaiexpert.com" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="p-6 border-2 border-border bg-secondary hover:bg-accent hover:text-accent-foreground transition-colors group flex flex-col items-center"
+                className="p-6 border border-border bg-secondary hover:bg-accent hover:text-accent-foreground transition-colors group flex flex-col items-center"
               >
                 <div className="h-24 w-full mb-4 flex items-center justify-center px-4">
                   <img 
-                    src="/images/logo-lawfirmaiexpert-official.png" 
+                    src="https://files.manuscdn.com/user_upload_by_module/session_file/310419663026744496/dSNzmcmOKVhDINLa.png" 
                     alt="LawFirmAIExpert Logo" 
                     className="max-h-full max-w-full object-contain"
                   />
@@ -354,11 +353,11 @@ export default function Home() {
                 href="https://cognifysolutions.ai" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="p-6 border-2 border-border bg-secondary hover:bg-accent hover:text-accent-foreground transition-colors group flex flex-col items-center"
+                className="p-6 border border-border bg-secondary hover:bg-accent hover:text-accent-foreground transition-colors group flex flex-col items-center"
               >
                 <div className="h-24 w-24 mb-4 flex items-center justify-center">
                   <img 
-                    src="/images/logo-cognifysolutions.png" 
+                    src="https://files.manuscdn.com/user_upload_by_module/session_file/310419663026744496/WHeSKJmCTHyrCBDY.png" 
                     alt="Cognify Solutions Logo" 
                     className="max-h-full max-w-full object-contain grayscale group-hover:grayscale-0 transition-all"
                   />
@@ -370,11 +369,11 @@ export default function Home() {
                 href="https://prevent-ransomware.com" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="p-6 border-2 border-border bg-secondary hover:bg-accent hover:text-accent-foreground transition-colors group flex flex-col items-center"
+                className="p-6 border border-border bg-secondary hover:bg-accent hover:text-accent-foreground transition-colors group flex flex-col items-center"
               >
                 <div className="h-24 w-full mb-4 flex items-center justify-center px-4">
                   <img 
-                    src="/images/logo-prevent-ransomware-official.png" 
+                    src="https://files.manuscdn.com/user_upload_by_module/session_file/310419663026744496/ubyCLmNlMRVGqDYo.png" 
                     alt="Prevent Ransomware Logo" 
                     className="max-h-full max-w-full object-contain"
                   />
@@ -406,11 +405,10 @@ export default function Home() {
       <footer className="py-12 border-t-2 border-border bg-background">
         <div className="container flex flex-col md:flex-row justify-between items-center gap-6">
           <div className="flex items-center gap-2">
-            <div className="h-6 w-6 bg-primary border border-border"></div>
-            <span className="font-display font-bold">IT/AI IN A BOX</span>
+            <img src="https://files.manuscdn.com/user_upload_by_module/session_file/310419663026744496/CaQwFveWPJStmzyy.png" alt="Secure Justice AI" className="h-8 w-auto" />
           </div>
           <div className="text-sm text-muted-foreground font-mono">
-            © 2026 IT/AI in a Box Consortium. All rights reserved.
+            © 2026 Secure Justice AI Consortium. All rights reserved.
           </div>
         </div>
       </footer>
