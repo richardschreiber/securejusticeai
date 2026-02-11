@@ -14,7 +14,7 @@ export default function Home() {
       <header className="border-b-2 border-border sticky top-0 z-50 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
         <div className="container flex h-20 items-center justify-between">
           <div className="flex items-center gap-2">
-            <img src="https://files.manuscdn.com/user_upload_by_module/session_file/310419663026744496/PFYhDrAcSzLKNWSM.png" alt="Secure Justice AI" className="h-32 w-auto" />
+            <img src="https://files.manuscdn.com/user_upload_by_module/session_file/310419663026744496/XUJqwQBCOCIKWQUu.png" alt="Secure Justice AI" className="h-32 w-auto" />
           </div>
           <nav className="hidden md:flex items-center gap-8 font-mono text-sm font-medium">
             <a href="#problem" className="hover:text-primary transition-colors">THE GAP</a>
@@ -42,7 +42,7 @@ export default function Home() {
                 WITH AI.
               </h1>
               <p className="text-xl text-muted-foreground max-w-lg font-medium leading-relaxed">
-                The first fully integrated, turnkey technology platform combining AI research, governance, and cybersecurity. Built to scale legal aid.
+                The first fully integrated, turnkey technology platform combining AI strategy, solutions, governance, and cybersecurity. Built to scale legal aid.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 pt-4">
                 <a href="#solution" className="btn-brutal text-lg">
@@ -145,7 +145,7 @@ export default function Home() {
               <div className="box-card group">
                 <div className="mb-6 border-b-2 border-border pb-4">
                   <div className="font-mono text-primary font-bold mb-2">01. SOLUTIONS</div>
-                  <h3 className="text-2xl font-bold">AI Research, Validation & Solutions</h3>
+                  <h3 className="text-2xl font-bold">AI Strategy, Validation & Solutions</h3>
                 </div>
                 <ul className="space-y-3 font-medium">
                   <li className="flex items-start gap-2">
@@ -349,7 +349,7 @@ export default function Home() {
                   />
                 </div>
                 <h4 className="font-bold text-lg mb-2 group-hover:underline decoration-2 underline-offset-4">lawfirmaiexpert.com</h4>
-                <p className="text-sm text-muted-foreground group-hover:text-accent-foreground/80">AI Research, Validation & Solutions</p>
+                <p className="text-sm text-muted-foreground group-hover:text-accent-foreground/80">AI Strategy, Validation & Solutions</p>
               </a>
               <a 
                 href="https://cognifysolutions.ai" 
