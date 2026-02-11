@@ -29,7 +29,7 @@ export default function Home() {
 
       <main className="flex-1">
         {/* Hero Section */}
-        <section className="relative border-b-2 border-border overflow-hidden">
+        <section className="relative border-b border-border overflow-hidden bg-gradient-to-b from-background to-secondary/30">
           <div className="container grid lg:grid-cols-2 gap-12 py-24 lg:py-32 items-center">
             <div className="space-y-8">
               <div className="inline-block border border-border bg-accent px-4 py-1 font-mono text-sm font-bold text-accent-foreground shadow-sm">
@@ -55,9 +55,9 @@ export default function Home() {
             <div className="relative">
               <div className="border border-border bg-card p-2 shadow-md">
                 <img 
-                  src="https://files.manuscdn.com/user_upload_by_module/session_file/310419663026744496/AzCGvfdlobYIdKGu.png" 
+                  src="https://files.manuscdn.com/user_upload_by_module/session_file/310419663026744496/kFKTjwNuQImnaOCF.png" 
                   alt="Justice Technology Infrastructure" 
-                  className="w-full h-auto border border-border grayscale hover:grayscale-0 transition-all duration-500"
+                  className="w-full h-auto border border-border shadow-lg rounded-lg"
                 />
               </div>
               {/* Decorative Elements */}
@@ -68,7 +68,7 @@ export default function Home() {
         </section>
 
         {/* The Problem / Justice Gap */}
-        <section id="problem" className="py-24 bg-secondary border-b-2 border-border">
+        <section id="problem" className="py-24 bg-secondary/50 border-b border-border">
           <div className="container">
             <div className="grid lg:grid-cols-12 gap-12">
               <div className="lg:col-span-5 space-y-6">
@@ -254,7 +254,7 @@ export default function Home() {
               <div className="relative">
                 <div className="border border-border bg-card p-2 shadow-lg">
                   <img 
-                    src="https://files.manuscdn.com/user_upload_by_module/session_file/310419663026744496/KdRYHAxezQKmgFwa.png" 
+                    src="https://files.manuscdn.com/user_upload_by_module/session_file/310419663026744496/uTOCojzXnfJfELmV.png" 
                     alt="Impact Growth Chart" 
                     className="w-full h-auto border border-border"
                   />
@@ -281,7 +281,7 @@ export default function Home() {
             <div className="relative mb-16">
               <div className="border border-border bg-card p-2 shadow-md max-w-4xl mx-auto">
                 <img 
-                  src="https://files.manuscdn.com/user_upload_by_module/session_file/310419663026744496/vZFfMphirvxCaMqv.png" 
+                  src="https://files.manuscdn.com/user_upload_by_module/session_file/310419663026744496/paCXbzSZsDUCBJCh.png" 
                   alt="Consortium Network Diagram" 
                   className="w-full h-auto border border-border"
                 />
@@ -386,7 +386,7 @@ export default function Home() {
         </section>
 
         {/* CTA / Contact */}
-        <section id="contact" className="py-24 bg-primary text-primary-foreground">
+        <section id="contact" className="py-24 bg-gradient-to-br from-primary to-primary/80 text-primary-foreground">
           <div className="container text-center">
             <h2 className="text-5xl lg:text-6xl font-bold mb-8 tracking-tighter">
               READY TO TRANSFORM <br/> LEGAL AID?
