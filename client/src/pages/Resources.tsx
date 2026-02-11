@@ -252,6 +252,9 @@ export default function Resources() {
       {/* Quick View Modal */}
       <Dialog open={!!selectedResource} onOpenChange={(open) => !open && setSelectedResource(null)}>
         <DialogContent className="max-w-4xl h-[80vh] flex flex-col p-0 gap-0">
+          <DialogHeader className="sr-only">
+            <DialogTitle>{selectedResource?.title}</DialogTitle>
+          </DialogHeader>
           <div className="p-4 border-b border-border flex items-center justify-between bg-background rounded-t-lg">
             <div className="flex items-center gap-3">
               <div className="h-8 w-8 bg-primary/10 rounded flex items-center justify-center">
