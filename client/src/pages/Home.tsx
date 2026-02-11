@@ -1,5 +1,6 @@
 import { DownloadForm } from "@/components/DownloadForm";
 import { ImpactCalculator } from "@/components/ImpactCalculator";
+import { ImpactMap } from "@/components/ImpactMap";
 import { AnnouncementBar } from "@/components/AnnouncementBar";
 import { ContactForm } from "@/components/ContactForm";
 import { Button } from "@/components/ui/button";
@@ -262,8 +263,9 @@ export default function Home() {
               </div>
             </div>
             
-            <div className="mt-16">
+            <div className="mt-16 grid lg:grid-cols-2 gap-8">
               <ImpactCalculator />
+              <ImpactMap />
             </div>
           </div>
         </section>
