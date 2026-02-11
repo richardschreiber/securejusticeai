@@ -334,55 +334,72 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="grid md:grid-cols-3 gap-8 text-center">
-              <a 
-                href="https://lawfirmaiexpert.com" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="p-6 border border-border bg-secondary hover:bg-accent hover:text-accent-foreground transition-colors group flex flex-col items-center"
-              >
-                <div className="h-24 w-full mb-4 flex items-center justify-center px-4">
+            <div className="grid md:grid-cols-3 gap-8">
+              {/* Richard Schreiber */}
+              <div className="bg-card rounded-xl p-8 shadow-lg border border-border/50 hover:border-primary/50 transition-all duration-300 flex flex-col h-full text-left">
+                <div className="flex items-center gap-4 mb-6">
                   <img 
-                    src="https://files.manuscdn.com/user_upload_by_module/session_file/310419663026744496/dSNzmcmOKVhDINLa.png" 
-                    alt="LawFirmAIExpert Logo" 
-                    className="max-h-full max-w-full object-contain"
+                    src="https://files.manuscdn.com/user_upload_by_module/session_file/310419663026744496/nIgSraGZtHrAcRDl.png" 
+                    alt="Richard Schreiber" 
+                    className="h-20 w-20 rounded-full object-cover border-2 border-primary/20"
                   />
+                  <div>
+                    <h3 className="text-xl font-bold leading-tight">Law Firm AI Expert</h3>
+                    <a href="https://lawfirmaiexpert.com" target="_blank" rel="noopener noreferrer" className="text-primary font-medium text-sm hover:underline">lawfirmaiexpert.com</a>
+                  </div>
                 </div>
-                <h4 className="font-bold text-lg mb-2 group-hover:underline decoration-2 underline-offset-4">lawfirmaiexpert.com</h4>
-                <p className="text-sm text-muted-foreground group-hover:text-accent-foreground/80">AI Strategy, Validation & Solutions</p>
-              </a>
-              <a 
-                href="https://cognifysolutions.ai" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="p-6 border border-border bg-secondary hover:bg-accent hover:text-accent-foreground transition-colors group flex flex-col items-center"
-              >
-                <div className="h-24 w-24 mb-4 flex items-center justify-center">
+                <p className="text-muted-foreground mb-6 flex-grow">
+                  With over 25 years of experience, Richard consults on AI implementation to improve workflows for law firms, helping lawyers move from burnout to leading with clarity.
+                </p>
+                <div className="pt-4 border-t border-border/50">
+                  <p className="font-bold text-foreground">Richard Schreiber</p>
+                  <p className="text-xs text-muted-foreground uppercase tracking-wider mt-1">Founder, TrialLift.com</p>
+                </div>
+              </div>
+
+              {/* Chris R. Feamster */}
+              <div className="bg-card rounded-xl p-8 shadow-lg border border-border/50 hover:border-primary/50 transition-all duration-300 flex flex-col h-full text-left">
+                <div className="flex items-center gap-4 mb-6">
                   <img 
-                    src="https://files.manuscdn.com/user_upload_by_module/session_file/310419663026744496/WHeSKJmCTHyrCBDY.png" 
-                    alt="Cognify Solutions Logo" 
-                    className="max-h-full max-w-full object-contain grayscale group-hover:grayscale-0 transition-all"
+                    src="https://files.manuscdn.com/user_upload_by_module/session_file/310419663026744496/MmOCaNiFDVXIybgF.jpg" 
+                    alt="Chris R. Feamster" 
+                    className="h-20 w-20 rounded-full object-cover border-2 border-secondary/20"
                   />
+                  <div>
+                    <h3 className="text-xl font-bold leading-tight">Cognify Solutions AI</h3>
+                    <a href="https://cognifysolutions.ai" target="_blank" rel="noopener noreferrer" className="text-secondary font-medium text-sm hover:underline">cognifysolutions.ai</a>
+                  </div>
                 </div>
-                <h4 className="font-bold text-lg mb-2 group-hover:underline decoration-2 underline-offset-4">cognifysolutions.ai</h4>
-                <p className="text-sm text-muted-foreground group-hover:text-accent-foreground/80">Governance & Strategy</p>
-              </a>
-              <a 
-                href="https://prevent-ransomware.com" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="p-6 border border-border bg-secondary hover:bg-accent hover:text-accent-foreground transition-colors group flex flex-col items-center"
-              >
-                <div className="h-24 w-full mb-4 flex items-center justify-center px-4">
+                <p className="text-muted-foreground mb-6 flex-grow">
+                  A technology entrepreneur with over 20 years of experience, Chris focuses on systems integration and pioneering ethical, auditable AI governance aligned with international standards.
+                </p>
+                <div className="pt-4 border-t border-border/50">
+                  <p className="font-bold text-foreground">Chris R. Feamster</p>
+                  <p className="text-xs text-muted-foreground uppercase tracking-wider mt-1">CEO, Nexus Systems Inc.</p>
+                </div>
+              </div>
+
+              {/* Tony Chiappetta */}
+              <div className="bg-card rounded-xl p-8 shadow-lg border border-border/50 hover:border-primary/50 transition-all duration-300 flex flex-col h-full text-left">
+                <div className="flex items-center gap-4 mb-6">
                   <img 
-                    src="https://files.manuscdn.com/user_upload_by_module/session_file/310419663026744496/ubyCLmNlMRVGqDYo.png" 
-                    alt="Prevent Ransomware Logo" 
-                    className="max-h-full max-w-full object-contain"
+                    src="https://files.manuscdn.com/user_upload_by_module/session_file/310419663026744496/HjgqoRBHnKXpRffZ.jpeg" 
+                    alt="Tony Chiappetta" 
+                    className="h-20 w-20 rounded-full object-cover border-2 border-primary/20"
                   />
+                  <div>
+                    <h3 className="text-xl font-bold leading-tight">Prevent Ransomware</h3>
+                    <a href="https://prevent-ransomware.com" target="_blank" rel="noopener noreferrer" className="text-primary font-medium text-sm hover:underline">prevent-ransomware.com</a>
+                  </div>
                 </div>
-                <h4 className="font-bold text-lg mb-2 group-hover:underline decoration-2 underline-offset-4">prevent-ransomware.com</h4>
-                <p className="text-sm text-muted-foreground group-hover:text-accent-foreground/80">Cybersecurity & IT</p>
-              </a>
+                <p className="text-muted-foreground mb-6 flex-grow">
+                  Specializing in Zero Trust cybersecurity, Tony leverages his unique law enforcement background to deliver advanced defense solutions that enhance profitability and efficiency.
+                </p>
+                <div className="pt-4 border-t border-border/50">
+                  <p className="font-bold text-foreground">Tony Chiappetta</p>
+                  <p className="text-xs text-muted-foreground uppercase tracking-wider mt-1">President, CHIPS Cyber Defense</p>
+                </div>
+              </div>
             </div>
           </div>
         </section>
