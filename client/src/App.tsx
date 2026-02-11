@@ -6,15 +6,15 @@ import ErrorBoundary from "./components/ErrorBoundary";
 import { ThemeProvider } from "./contexts/ThemeContext";
 import Home from "./pages/Home";
 import ThankYou from "./pages/ThankYou";
+import Resources from "./pages/Resources";
 
 
 function Router() {
   return (
     <Switch>
-      <Route path={"/"} component={Home} />
-      <Route path={"/thank-you"} component={ThankYou} />
-      <Route path={"/404"} component={NotFound} />
-      {/* Final fallback route */}
+      <Route path="/" component={Home} />
+      <Route path="/resources" component={Resources} />
+      <Route path="/thank-you" component={ThankYou} />
       <Route component={NotFound} />
     </Switch>
   );

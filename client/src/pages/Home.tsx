@@ -21,6 +21,7 @@ export default function Home() {
             <a href="#solution" className="hover:text-primary transition-colors">THE BOX</a>
             <a href="#impact" className="hover:text-primary transition-colors">IMPACT</a>
             <a href="#consortium" className="hover:text-primary transition-colors">PARTNERS</a>
+            <a href="/resources" className="hover:text-primary transition-colors">RESOURCES</a>
           </nav>
           <a href="#contact" className="btn-brutal text-sm px-4 py-2 h-auto">
             GET ACCESS
