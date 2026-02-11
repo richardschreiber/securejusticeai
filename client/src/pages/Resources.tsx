@@ -1,7 +1,11 @@
-import { FileText, Download, ArrowRight, BookOpen, Shield, Users, Scale } from "lucide-react";
+import { FileText, Download, ArrowRight, BookOpen, Shield, Users, Scale, Search } from "lucide-react";
 import { AnnouncementBar } from "@/components/AnnouncementBar";
+import { useState } from "react";
+import { Input } from "@/components/ui/input";
 
 export default function Resources() {
+  const [searchQuery, setSearchQuery] = useState("");
+
   const resources = [
     {
       title: "IT/AI in a Box: The First Integrated Technology Platform for Legal Aid",
@@ -68,6 +72,12 @@ export default function Resources() {
     }
   ];
 
+  const filteredResources = resources.filter(resource => 
+    resource.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
+    resource.description.toLowerCase().includes(searchQuery.toLowerCase()) ||
+    resource.type.toLowerCase().includes(searchQuery.toLowerCase())
+  );
+
   return (
     <div className="min-h-screen flex flex-col bg-background text-foreground selection:bg-primary selection:text-primary-foreground">
       <AnnouncementBar />
@@ -105,9 +115,20 @@ export default function Resources() {
                 RESEARCH & <br/>
                 <span className="text-primary">INSIGHTS</span>
               </h1>
-              <p className="text-xl text-muted-foreground font-medium leading-relaxed">
+              <p className="text-xl text-muted-foreground font-medium leading-relaxed mb-8">
                 Access our library of white papers, research dossiers, and strategic analysis on the intersection of AI, cybersecurity, and legal aid.
               </p>
+              
+              <div className="relative max-w-xl">
+                <Search className="absolute left-3 top-1/2 -translate-y-1/2 h-5 w-5 text-muted-foreground" />
+                <Input 
+                  type="text" 
+                  placeholder="Search resources..." 
+                  className="pl-10 h-12 text-lg bg-background border-border"
+                  value={searchQuery}
+                  onChange={(e) => setSearchQuery(e.target.value)}
+                />
+              </div>
             </div>
           </div>
         </section>
@@ -116,8 +137,14 @@ export default function Resources() {
         <section className="py-20">
           <div className="container">
             <div className="grid gap-8">
+              {filteredResources.length === 0 && (
+                <div className="text-center py-12">
+                  <p className="text-xl text-muted-foreground">No resources found matching "{searchQuery}"</p>
+                </div>
+              )}
+
               {/* Featured Resource */}
-              {resources.filter(r => r.featured).map((resource, index) => (
+              {filteredResources.filter(r => r.featured).map((resource, index) => (
                 <div key={index} className="bg-card border border-border rounded-xl p-8 shadow-lg hover:border-primary/50 transition-all duration-300 group">
                   <div className="flex flex-col md:flex-row gap-8 items-start">
                     <div className="h-24 w-24 bg-primary/10 rounded-xl flex items-center justify-center shrink-0">
@@ -148,7 +175,7 @@ export default function Resources() {
 
               {/* Other Resources */}
               <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mt-8">
-                {resources.filter(r => !r.featured).map((resource, index) => (
+                {filteredResources.filter(r => !r.featured).map((resource, index) => (
                   <div key={index} className="bg-card border border-border rounded-xl p-6 shadow-sm hover:shadow-md hover:border-primary/50 transition-all duration-300 flex flex-col h-full group">
                     <div className="flex items-start justify-between mb-4">
                       <div className="h-12 w-12 bg-secondary rounded-lg flex items-center justify-center">
