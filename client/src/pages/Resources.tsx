@@ -17,7 +17,7 @@ export default function Resources() {
       description: "A comprehensive report on the viability and impact of a fully end-to-end IT and AI solution for non-profit legal services.",
       type: "White Paper",
       size: "10.1 MB",
-      url: "https://files.manuscdn.com/user_upload_by_module/session_file/310419663026744496/VgxfGDLQKHwvpSiF.pdf",
+      url: "https://files.manuscdn.com/user_upload_by_module/session_file/310419663026744496/JwIQHsciFXhRDkPx.pdf",
       icon: <BookOpen className="h-8 w-8 text-primary" />,
       featured: true
     },
