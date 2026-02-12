@@ -5,6 +5,7 @@ import { AnnouncementBar } from "@/components/AnnouncementBar";
 import { ContactForm } from "@/components/ContactForm";
 import { Button } from "@/components/ui/button";
 import { MobileNav } from "@/components/MobileNav";
+import { BackToTop } from "@/components/BackToTop";
 import { ArrowRight, Check, Shield, Scale, Database, Users, BarChart3, Lock, Zap } from "lucide-react";
 
 export default function Home() {
@@ -60,6 +61,7 @@ export default function Home() {
         </div>
       </header>
 
+      <BackToTop />
       <main className="flex-1">
         {/* Hero Section */}
         <section className="relative border-b border-border overflow-hidden bg-gradient-to-b from-background to-secondary/30">

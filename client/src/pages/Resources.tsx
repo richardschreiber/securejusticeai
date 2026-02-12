@@ -5,6 +5,7 @@ import { Input } from "@/components/ui/input";
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog";
 import { Button } from "@/components/ui/button";
 import { MobileNav } from "@/components/MobileNav";
+import { BackToTop } from "@/components/BackToTop";
 
 export default function Resources() {
   const [searchQuery, setSearchQuery] = useState("");
@@ -128,6 +129,7 @@ export default function Resources() {
         </div>
       </header>
 
+      <BackToTop />
       <main className="flex-1">
         {/* Hero Section */}
         <section className="relative border-b border-border overflow-hidden bg-gradient-to-b from-background to-secondary/30 py-20">
