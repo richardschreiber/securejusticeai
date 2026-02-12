@@ -4,6 +4,7 @@ import { ImpactMap } from "@/components/ImpactMap";
 import { AnnouncementBar } from "@/components/AnnouncementBar";
 import { ContactForm } from "@/components/ContactForm";
 import { Button } from "@/components/ui/button";
+import { MobileNav } from "@/components/MobileNav";
 import { ArrowRight, Check, Shield, Scale, Database, Users, BarChart3, Lock, Zap } from "lucide-react";
 
 export default function Home() {
@@ -52,9 +53,10 @@ export default function Home() {
             <a href="#consortium" className="hover:text-primary transition-colors">PARTNERS</a>
             <a href="/resources" className="hover:text-primary transition-colors">RESOURCES</a>
           </nav>
-          <a href="#contact" className="btn-brutal text-sm px-4 py-2 h-auto">
+          <a href="#contact" className="btn-brutal text-sm px-4 py-2 h-auto hidden md:inline-flex">
             GET ACCESS
           </a>
+          <MobileNav />
         </div>
       </header>
 

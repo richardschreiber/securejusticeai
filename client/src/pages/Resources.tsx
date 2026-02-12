@@ -4,6 +4,7 @@ import { useState } from "react";
 import { Input } from "@/components/ui/input";
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog";
 import { Button } from "@/components/ui/button";
+import { MobileNav } from "@/components/MobileNav";
 
 export default function Resources() {
   const [searchQuery, setSearchQuery] = useState("");
@@ -120,9 +121,10 @@ export default function Resources() {
             <a href="/#consortium" className="hover:text-primary transition-colors">PARTNERS</a>
             <a href="/resources" className="text-primary font-bold transition-colors">RESOURCES</a>
           </nav>
-          <a href="/#contact" className="btn-brutal text-sm px-4 py-2 h-auto">
+          <a href="/#contact" className="btn-brutal text-sm px-4 py-2 h-auto hidden md:inline-flex">
             GET ACCESS
           </a>
+          <MobileNav />
         </div>
       </header>
 
