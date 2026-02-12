@@ -15,7 +15,7 @@ export default function Resources() {
       description: "A comprehensive report on the viability and impact of a fully end-to-end IT and AI solution for non-profit legal services.",
       type: "White Paper",
       size: "10.1 MB",
-      url: "https://files.manuscdn.com/user_upload_by_module/session_file/310419663026744496/zCYfpJmOJPBZzfCW.pdf",
+      url: "https://files.manuscdn.com/user_upload_by_module/session_file/310419663026744496/xdkiNCsAlCFeZKWP.pdf",
       icon: <BookOpen className="h-8 w-8 text-primary" />,
       featured: true
     },
@@ -33,7 +33,7 @@ export default function Resources() {
       description: "In-depth analysis of Bob Ambrogi's contributions to legal tech, focusing on AI adoption and regulatory changes.",
       type: "Research Dossier",
       size: "242 KB",
-      url: "https://files.manuscdn.com/user_upload_by_module/session_file/310419663026744496/WPmNboTorEXtmQpa.pdf",
+      url: "https://files.manuscdn.com/user_upload_by_module/session_file/310419663026744496/j16q97r958742839.pdf",
       icon: <Users className="h-6 w-6 text-muted-foreground" />,
       featured: false
     },
