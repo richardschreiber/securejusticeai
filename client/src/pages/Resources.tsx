@@ -83,6 +83,26 @@ export default function Resources() {
 
   return (
     <div className="min-h-screen flex flex-col bg-background text-foreground selection:bg-primary selection:text-primary-foreground">
+      <script type="application/ld+json">
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "CollectionPage",
+          "name": "Secure Justice AI Resources",
+          "description": "Library of white papers, research dossiers, and strategic analysis on AI, cybersecurity, and legal aid.",
+          "url": "https://it-ai-in-a-box.org/resources",
+          "hasPart": resources.map(resource => ({
+            "@type": "DigitalDocument",
+            "name": resource.title,
+            "description": resource.description,
+            "url": resource.url,
+            "fileFormat": "application/pdf",
+            "author": {
+              "@type": "Organization",
+              "name": "Secure Justice AI"
+            }
+          }))
+        })}
+      </script>
       <AnnouncementBar />
       
       {/* Navigation */}

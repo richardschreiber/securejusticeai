@@ -9,6 +9,35 @@ import { ArrowRight, Check, Shield, Scale, Database, Users, BarChart3, Lock, Zap
 export default function Home() {
   return (
     <div className="min-h-screen flex flex-col bg-background text-foreground selection:bg-primary selection:text-primary-foreground">
+      <script type="application/ld+json">
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          "name": "Secure Justice AI",
+          "alternateName": "IT/AI in a Box",
+          "url": "https://it-ai-in-a-box.org",
+          "logo": "https://files.manuscdn.com/user_upload_by_module/session_file/310419663026744496/rcdAWwGDnHCeJcAq.png",
+          "description": "The first integrated technology platform designed specifically for non-profit legal aid organizations, combining AI strategy, cybersecurity, and IT infrastructure.",
+          "founder": {
+            "@type": "Person",
+            "name": "Richard Schreiber",
+            "jobTitle": "Consortium Lead",
+            "email": "richard@lawfirmaiexpert.com",
+            "telephone": "917-388-9452"
+          },
+          "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "917-388-9452",
+            "contactType": "customer service",
+            "email": "richard@lawfirmaiexpert.com"
+          },
+          "sameAs": [
+            "https://lawfirmaiexpert.com",
+            "https://cognifysolutions.ai",
+            "https://prevent-ransomware.com"
+          ]
+        })}
+      </script>
       <AnnouncementBar />
       {/* Navigation */}
       <header className="border-b-2 border-border sticky top-0 z-50 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">

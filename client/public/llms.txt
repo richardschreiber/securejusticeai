@@ -1,0 +1,17 @@
+# Secure Justice AI
+
+> Secure Justice AI (formerly IT/AI in a Box) is the first integrated technology platform designed specifically for non-profit legal aid organizations. We combine advanced AI strategy, cybersecurity, and IT infrastructure to empower justice.
+
+## Core Pages
+- [Home](https://it-ai-in-a-box.org/)
+- [Resources](https://it-ai-in-a-box.org/resources)
+
+## Key Resources
+- [White Paper: IT/AI in a Box](https://it-ai-in-a-box.org/resources) - A comprehensive report on the viability and impact of a fully end-to-end IT and AI solution for non-profit legal services.
+- [Research Dossier: Bob Ambrogi](https://it-ai-in-a-box.org/resources) - In-depth analysis of Bob Ambrogi's contributions to legal tech.
+- [Research Dossier: Kristen Sonday](https://it-ai-in-a-box.org/resources) - Profile on Kristen Sonday (Paladin) and her work in access to justice.
+
+## Contact
+- **Consortium Lead:** Richard Schreiber
+- **Email:** richard@lawfirmaiexpert.com
+- **Phone:** 917-388-9452
