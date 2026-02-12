@@ -170,7 +170,7 @@ export default function Home() {
               </p>
             </div>
 
-            <div className="grid md:grid-cols-3 gap-8">
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
               {/* Component 1 */}
               <div className="box-card group">
                 <div className="mb-6 border-b-2 border-border pb-4">
@@ -364,7 +364,7 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="grid md:grid-cols-3 gap-8">
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
               {/* Richard Schreiber */}
               <div className="bg-card rounded-xl p-8 shadow-lg border border-border/50 hover:border-primary/50 transition-all duration-300 flex flex-col h-full text-left">
                 <div className="flex items-center gap-4 mb-6">
