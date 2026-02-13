@@ -22,6 +22,15 @@ export default function Resources() {
       featured: true
     },
     {
+      title: "Case Study: Law Firm 2023",
+      description: "A detailed case study analyzing the implementation and impact of legal technology solutions in a modern law firm environment.",
+      type: "Case Study",
+      size: "413 KB",
+      url: "https://files.manuscdn.com/user_upload_by_module/session_file/310419663026744496/QeKmnwOUAMDKukjh.pdf",
+      icon: <FileText className="h-6 w-6 text-secondary" />,
+      featured: false
+    },
+    {
       title: "Legal Tech Experts Research: Executive Summary",
       description: "Key findings and strategic insights from our deep research into the legal technology landscape and expert opinions.",
       type: "Executive Summary",
