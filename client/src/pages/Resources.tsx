@@ -27,7 +27,7 @@ export default function Resources() {
       type: "Case Study",
       size: "413 KB",
       url: "https://files.manuscdn.com/user_upload_by_module/session_file/310419663026744496/QeKmnwOUAMDKukjh.pdf",
-      icon: <FileText className="h-6 w-6 text-secondary" />,
+      icon: <img src="https://files.manuscdn.com/user_upload_by_module/session_file/310419663026744496/TtqujyRcpgXIIALC.png" alt="Case Study Thumbnail" className="h-full w-full object-cover rounded-md" />,
       featured: false
     },
     {
