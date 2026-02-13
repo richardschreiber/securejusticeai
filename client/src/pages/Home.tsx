@@ -44,8 +44,9 @@ export default function Home() {
       {/* Navigation */}
       <header className="border-b-2 border-border sticky top-0 z-40 w-full bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
         <div className="container flex h-20 items-center justify-between">
-          <div className="flex items-center gap-2">
-            <img src="https://files.manuscdn.com/user_upload_by_module/session_file/310419663026744496/rcdAWwGDnHCeJcAq.png" alt="Secure Justice AI" className="h-32 w-auto" />
+          <div className="flex flex-col items-center gap-1">
+            <img src="https://files.manuscdn.com/user_upload_by_module/session_file/310419663026744496/rcdAWwGDnHCeJcAq.png" alt="Secure Justice AI" className="h-16 w-auto" />
+            <span className="font-display font-bold text-sm tracking-tight leading-none">SECURE JUSTICE AI</span>
           </div>
           <nav className="hidden md:flex items-center gap-8 font-mono text-sm font-medium">
             <a href="#problem" className="hover:text-primary transition-colors">THE GAP</a>
