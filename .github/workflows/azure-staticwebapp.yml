@@ -56,6 +56,8 @@ jobs:
 
       - name: Build
         run: pnpm run build
+        
+      - run: ls -la dist/public
 
           
       - name: Build And Deploy
@@ -68,8 +70,8 @@ jobs:
           ###### Repository/Build Configurations - These values can be configured to match you app requirements. ######
           # For more information regarding Static Web App workflow configurations, please visit: https://aka.ms/swaworkflowconfig
           app_location: "dist/public"
-          api_location: ${{ env.API_LOCATION }}
-          app_artifact_location: ${{ env.APP_ARTIFACT_LOCATION }}
+          # api_location: ${{ env.API_LOCATION }}
+          # app_artifact_location: ${{ env.APP_ARTIFACT_LOCATION }}
           skip_app_build: true
           output_location: ""     # REQUIRED when skip_app_build: true
           ###### End of Repository/Build Configurations ######
